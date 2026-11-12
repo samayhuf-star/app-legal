@@ -52,16 +52,12 @@ footer { color: var(--muted); font-size: 0.9rem; padding-bottom: 3rem; }
     <p>When the purchase system is configured, the app contacts RevenueCat to load offerings, complete or restore a purchase, and check whether Pro is active. RevenueCat receives:</p>
     <ul>
       <li>an app user ID created by RevenueCat (the app does not create an account or send a name or email address; it does not pass its own user ID to RevenueCat);</li>
-      <li>purchase history and entitlement status for the products above;</li>
-      <li>subscriber attributes the app sets: app name, app version, build number, locale, operating-system version, and platform;</li>
-      <li>the source and time of a paywall being shown, and a one-time “first clean” milestone date if you complete a clean;</li>
-      <li>device identifiers collected by the RevenueCat SDK, and, on iPhone, an Apple Search Ads (AdServices) attribution token;</li>
-      <li>campaign attributes if the app is opened from a link that includes standard <code>utm_</code> or <code>ref</code> parameters.</li>
+      <li>purchase history and entitlement status for the products above.</li>
     </ul>
-    <p>RevenueCat also records paywall impressions, closes, and conversions when a RevenueCat paywall is shown. Offerings, product configuration, and the paywall design are loaded from RevenueCat. RevenueCat’s handling of this information is described in its own privacy policy at <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>.</p>
+    <p>The app does not collect device identifiers, Apple Search Ads (AdServices) attribution tokens, or campaign or <code>utm_</code> attributes. Offerings, product configuration, and prices are loaded from RevenueCat and shown in the app. RevenueCat’s handling of this information is described in its own privacy policy at <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>.</p>
 
     <h2>Analytics and crash reporting</h2>
-    <p>The app does not include a separate analytics or crash-reporting SDK. The only third-party service that receives the usage and identifier data listed above is RevenueCat, as part of purchases, entitlements, and the attribution features the SDK is configured to use.</p>
+    <p>The app does not include a separate analytics or crash-reporting SDK. The only third-party service that receives purchase and entitlement data is RevenueCat. That data is not used for tracking.</p>
 
     <h2>Network calls</h2>
     <p>Aside from RevenueCat and the store purchase flow, the app does not call our own servers. It may open system screens (Settings, Photos, your mail app, or the store’s review prompt) at your request. There is no account to sign in to.</p>
@@ -70,7 +66,7 @@ footer { color: var(--muted); font-size: 0.9rem; padding-bottom: 3rem; }
     <p>Photo and video library access is required to scan and delete items. Notification permission is optional and is requested only if you turn on reminders. The app does not ask for location, camera, contacts, or tracking permission (it has no App Tracking Transparency prompt).</p>
 
     <h2>Sharing</h2>
-    <p>We do not sell your information. Your photos and videos are not shared. Purchase and the related identifier and attribution data described above are sent to RevenueCat so Pro can be sold, restored, and managed. Apple or Google processes the payment under their own policies.</p>
+    <p>We do not sell your information. Your photos and videos are not shared. Purchase history and the anonymous RevenueCat app user ID are sent to RevenueCat so Pro can be sold, restored, and managed. Apple or Google processes the payment under their own policies.</p>
 
     <h2>Retention and deletion</h2>
     <p>On-device preferences and temporary files are removed if you delete the app. Purchase records and the RevenueCat app user ID are held by RevenueCat and the store for as long as needed to provide the purchase and to meet their legal obligations. Restoring a purchase from the store will unlock Pro again if the store still shows a valid purchase.</p>
